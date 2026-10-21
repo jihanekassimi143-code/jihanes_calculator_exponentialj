@@ -1,4 +1,4 @@
-name shown in the Actions tab
+# The name shown in the Actions tab
 name: CI
 
 # When the pipeline runs
