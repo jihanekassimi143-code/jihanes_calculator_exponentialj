@@ -23,7 +23,7 @@ jobs:
       - uses: hadolint/hadolint-action@v3.1.0
         with:
           # Explicitly point to the file path from workspace root
-          dockerfile: ./Dockerfile
+          dockerfile: Dockerfile
           failure-threshold: error
 
   # Job 2: build the image and run all tests
