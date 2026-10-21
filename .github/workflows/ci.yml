@@ -22,10 +22,8 @@ jobs:
       # risky patterns, and style problems without running it. It is a spell-checker for code.
       - uses: hadolint/hadolint-action@v3.1.0
         with:
-          # Which file to check
-          dockerfile: Dockerfile
-          # Keep it beginner friendly: only fail on real errors
-          # (warnings and style hints are shown but don't stop the pipeline)
+          # Explicitly point to the file path from workspace root
+          dockerfile: ./Dockerfile
           failure-threshold: error
 
   # Job 2: build the image and run all tests
